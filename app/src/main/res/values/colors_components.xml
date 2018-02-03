@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="chatbubble_outgoing">@color/colorPrimary</color>
+  <color name="chatbubble_outgoing_textcolor">@color/white</color>
+  <color name="chatbubble_incoming">@color/blue_50</color>
+  <color name="chatbubble_incoming_textcolor">@color/black</color>
+</resources>

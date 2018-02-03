@@ -1,0 +1,29 @@
+<resources>
+
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+  </style>
+
+  <style name="ChatBubble.Outgoing">
+    <item name="android:background">@drawable/cb_chat_fragment_listitem_speechbubble_outgoing_shape</item>
+    <item name="android:textColor">@color/chatbubble_outgoing_textcolor</item>
+  </style>
+
+  <style name="ChatBubble.Incoming">
+    <item name="android:background">@drawable/cb_chat_fragment_listitem_speechbubble_incoming_shape</item>
+    <item name="android:textColor">@color/chatbubble_incoming_textcolor</item>
+  </style>
+
+  <style name="ChatBubble">
+    <item name="android:layout_margin">16dp</item>
+    <item name="android:paddingBottom">16dp</item>
+    <item name="android:paddingTop">8dp</item>
+    <item name="android:paddingEnd">8dp</item>
+    <item name="android:paddingStart">8dp</item>
+  </style>
+
+</resources>

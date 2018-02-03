@@ -1,0 +1,5 @@
+<resources>
+  <string name="app_name">CirclesBot</string>
+  <string name="send">Send</string>
+  <string name="enter_message">Enter message...</string>
+</resources>

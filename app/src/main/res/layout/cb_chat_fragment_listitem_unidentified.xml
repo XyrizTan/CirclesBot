@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+  <TextView
+      style="@style/ChatBubble.Incoming"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      app:layout_constraintWidth_default="percent"
+      app:layout_constraintWidth_percent="0.8"
+      app:layout_constraintWidth_max="wrap"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      tools:text="Lorem ipsum sip dolor sit amet Lorem ipsum sip dolor sit amet Lorem ipsum sip dolor sit amet"
+      />
+
+</android.support.constraint.ConstraintLayout>
