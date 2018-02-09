@@ -70,12 +70,21 @@ class ChatFragment : Fragment(), ChatView {
 
   }
 
+  override fun scrollToPosition(position: Int) {
+    view?.let {
+      if (0 <= position && position < it.cb_chat_fragment_recyclerview.adapter.itemCount) {
+        it.cb_chat_fragment_recyclerview.layoutManager.scrollToPosition(position)
+      }
+    }
+  }
+
   private fun sendMessage(queryString: String) {
     view?.let {
       if (queryString.isNotBlank()) {
         it.cb_chat_fragment_input_edittext.text.clear()
         mChatPresenter.sendMessage(queryString)
-        it.cb_chat_fragment_recyclerview.layoutManager.scrollToPosition(it.cb_chat_fragment_recyclerview.adapter.itemCount-1)
+
+        scrollToPosition(it.cb_chat_fragment_recyclerview.adapter.itemCount-1)
       }
     }
   }

@@ -7,17 +7,27 @@
     android:layout_height="wrap_content"
     >
 
+  <ImageView
+      android:id="@+id/cb_chat_fragment_listitem_speechbubble_incoming_avatar"
+      android:layout_width="32dp"
+      android:layout_height="32dp"
+      android:src="@drawable/robot"
+      android:layout_marginStart="16dp"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      />
+
   <TextView
       android:id="@+id/cb_chat_fragment_listitem_speechbubble_incoming_textview"
       style="@style/ChatBubble.Incoming"
       android:layout_width="0dp"
+      app:layout_constraintLeft_toRightOf="@id/cb_chat_fragment_listitem_speechbubble_incoming_avatar"
       android:layout_height="wrap_content"
       app:layout_constraintWidth_default="percent"
       app:layout_constraintWidth_percent="0.8"
       app:layout_constraintWidth_max="wrap"
       app:layout_constraintTop_toTopOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      tools:text="Lorem ipsum sip dolor sit amet Lorem ipsum sip dolor sit amet Lorem ipsum sip dolor sit amet"
+      tools:text="Lorem ipsum sip dolor "
       />
 
 </android.support.constraint.ConstraintLayout>

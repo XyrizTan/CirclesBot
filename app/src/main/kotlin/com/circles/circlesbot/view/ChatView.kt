@@ -13,5 +13,7 @@ interface ChatView {
 
   fun showError(errorMessage: String)
 
+  fun scrollToPosition(position: Int)
+
   fun setPresenter(chatPresenter: ChatPresenter)
 }
