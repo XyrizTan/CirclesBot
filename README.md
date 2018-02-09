@@ -1,4 +1,4 @@
-##CirclesBot for Android (Written in Kotlin)##
+## CirclesBot for Android (Written in Kotlin)
 
 In your project root, append these in your gradle.properties (or create one if it does not exist.)
 
