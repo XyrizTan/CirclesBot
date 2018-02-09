@@ -9,12 +9,12 @@
 
   <ImageView
       android:id="@+id/cb_chat_fragment_listitem_speechbubble_incoming_avatar"
-      android:layout_width="32dp"
-      android:layout_height="32dp"
+      android:layout_width="24dp"
+      android:layout_height="24dp"
       android:src="@drawable/robot"
-      android:layout_marginStart="16dp"
       app:layout_constraintLeft_toLeftOf="parent"
       app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintRight_toLeftOf="@id/cb_chat_fragment_listitem_speechbubble_incoming_textview"
       />
 
   <TextView
@@ -23,11 +23,13 @@
       android:layout_width="0dp"
       app:layout_constraintLeft_toRightOf="@id/cb_chat_fragment_listitem_speechbubble_incoming_avatar"
       android:layout_height="wrap_content"
-      app:layout_constraintWidth_default="percent"
+      app:layout_constraintWidth_default="percent"  
       app:layout_constraintWidth_percent="0.8"
       app:layout_constraintWidth_max="wrap"
       app:layout_constraintTop_toTopOf="parent"
-      tools:text="Lorem ipsum sip dolor "
+      android:autoLink="web"
+      android:linksClickable="true"
+      tools:text="Lorem ipsum sip dolor Lorem ipsum sip dolor"
       />
 
 </android.support.constraint.ConstraintLayout>
