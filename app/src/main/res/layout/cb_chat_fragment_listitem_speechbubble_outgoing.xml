@@ -7,6 +7,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     >
 
+  <android.support.constraint.Guideline
+      android:id="@+id/left_guideline"
+      android:orientation="vertical"
+      android:layout_width="0dp"
+      app:layout_constraintWidth_default="percent"
+      app:layout_constraintWidth_min="wrap"
+      app:layout_constraintGuide_percent="0.2"
+      android:layout_height="match_parent" />
   <TextView
       style="@style/ChatBubble.Outgoing"
       android:id="@+id/cb_chat_fragment_listitem_speechbubble_outgoing_textview"
@@ -17,7 +25,8 @@
       app:layout_constraintWidth_max="wrap"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintRight_toRightOf="parent"
-      tools:text="Lorem ipsum sip dolor sit amet Lorem ipsum sip dolor sit amet Lorem ipsum sip dolor sit amet"
+      app:layout_constraintBottom_toBottomOf="parent"
+      tools:text="Lorem ipsum long text Lorem ipsum long text Lorem ipsum long text Lorem ipsum long text"
       />
 
 </android.support.constraint.ConstraintLayout>
