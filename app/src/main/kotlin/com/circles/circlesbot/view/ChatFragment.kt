@@ -43,7 +43,7 @@ class ChatFragment : Fragment(), ChatView {
         view?.let {
             val chatAdapter = it.cb_chat_fragment_recyclerview?.adapter as? ChatAdapter
             chatAdapter?.let { adapter ->
-                adapter.updateList(list)
+                adapter.submitList(list)
                 if (isLastMessageVisible()) {
                     scrollToPosition(adapter.itemCount - 1)
                 }
