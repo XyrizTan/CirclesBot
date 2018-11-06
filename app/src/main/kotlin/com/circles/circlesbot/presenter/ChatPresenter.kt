@@ -13,7 +13,7 @@ class ChatPresenter(val view: ChatView, val chatMessageProvider: ChatMessageStor
         view.setPresenter(this)
     }
 
-    val TAG = ChatPresenter::class.java.simpleName
+    val TAG = "ChatPresenter"
 
     fun sendMessage(queryString: String) {
         chatMessageProvider.sendChatMessage(queryString,

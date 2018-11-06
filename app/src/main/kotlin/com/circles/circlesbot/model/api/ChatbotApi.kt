@@ -12,8 +12,8 @@ import retrofit2.http.POST
 
 interface ChatbotApi {
 
-  @POST("v2.0/knowledgebases/${BuildConfig.KNOWLEDGEBASE_KEY}/generateAnswer")
+  @POST("knowledgebases/${BuildConfig.KNOWLEDGEBASE_KEY}/generateAnswer")
   fun generateAnswer(
-      @Header("Ocp-Apim-Subscription-Key") subscriptionKey: String = BuildConfig.SUBSCRIPTION_KEY,
+      @Header("Authorization") subscriptionKey: String = BuildConfig.SUBSCRIPTION_KEY,
       @Body request : QnARequest): Call<QnAResponse>
 }

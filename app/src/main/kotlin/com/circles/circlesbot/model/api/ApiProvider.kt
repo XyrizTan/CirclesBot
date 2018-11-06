@@ -27,7 +27,7 @@ object ApiProvider {
       .create()
 
   val chatbotApi= Retrofit.Builder()
-      .baseUrl("https://westus.api.cognitive.microsoft.com/qnamaker/")
+      .baseUrl("https://circlesbot.azurewebsites.net/qnamaker/")
       .addConverterFactory(GsonConverterFactory.create(
           gson))
       .client(httpClient)
